@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptomoeda</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class = "caixaCoin">
+         <h1 class="classe-titulo" id="titulo"  >CRIPTOMOEDAS</h1>
+        
+        <select onchange="selectCoin(this.value)" id="idselect">
+        <option value = "BTC" >BitCoin</option>
+        <option value = "ETH">Ethereum</option>
+        <option value = "DOGE">Dogecoin</option>
+        <option value = "AXS">Axie Infinity</option>
+        <option value = "SOL">Solana</option>
+        <option value = "USDC">USD Coin</option>
+        <option value = "DOT">Polkadot</option>
+        <option value = "ADA">Cardano</option>
+        <option value = "LTC">Litecoin</option>
+        <option value = "XLM">Stellar</option>
+        <option value = "XRP">XRP</option>
+        <option value=""selected></option>
+        </select>
+      
+        <div><p><span class = "spanImg"><img src="" id="iconCoin"></span></p></div>
+
+        <div class = "divapi">
+        <p><span id="valorLastExibir"></span></p>
+        <p><span id="valorHighExibir"></span></p>
+        <p><span id="valorLowExibir"></span></p>
+        <p><span id="volumeExibir"></span></p>
+        <p><span id="idDataCoin"></span></p>
+        <div id = "graficoBarra"></div>
+        <script src="api.js"></script> 
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <div id="linhavertical"></div>
+        </div>
+    </div>
+        
+</body>
+
+    
