@@ -44,7 +44,7 @@ function selectCoin(idCoin){
       
             function drawChart() {
               var data = google.visualization.arrayToDataTable([
-                ['Cotação', 'Última negociação', 'Última negociação mais alta', 'Última negociação mais baixa',
+                ['Cotações das últimas 24 horas', 'Última negociação mais baixa','Última negociação','Última negociação mais alta', 
                 'Volume negociado'],
                 [stringIdCoin,valorCoinLow, valorCoinLast, valorCoinHigh, volumeCoin ],
                 
